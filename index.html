@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredit Teskilati</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg">
+        <h1>Kredit Kalkulyatoru</h1>
+        <div class="calc">
+            <div class="box">
+                <h2>Kreditin Meblegi</h2>
+                <input id="mebleg" type="number">
+                <p>Min-100 Azn | Max 100.000 Azn</p>
+                
+            </div>
+            <div class="box">
+                <h2>Kreditin Muddeti</h2>
+                <input id="muddet" type="number">
+                <p>Min-3 ay | Max- 48 ay</p>
+                
+            </div>
+            <div class="box">
+                <h2>Illik Faiz Derecesi</h2>
+                <input id="faiz" type="number">
+                <p>Min- 16% | Max- 20% </p>
+                
+                
+            </div>
+        </div>
+        <button onclick="check()" id="check">Yoxla</button>
+
+        <div class="netice">
+            <div style="background-color: #1a1a1a ;" class="count">
+                <h2>Umumi Mebleg</h2>
+                <h1 id="count"></h1>
+                <h2>AZN</h2>
+            </div>
+            <div style="background-color: #1a1a1a ;" class="formounth">
+                <h2>Ayliq Odenis</h2>
+                <h1 id="mounth"></h1>
+                <h2>AZN</h2>
+            </div>
+        </div>
+        
+        <h3>— Kredit proseduruna komissiya: 1%, 3%, 5% (min. 20 AZN)</h3>
+        <h3>— FİFD (Faktiki illik faiz dərəcəsi): min. 16% </h3>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
